@@ -9,7 +9,7 @@ function handleRequest(request, response){
 }
 var server = http.createServer(handleRequest);
 server.listen(PORT, function(){
-    console.log(good[Math.floor(Math.random() * good.length)] + PORT);
+    console.log(good[Math.floor(Math.random() * good.length)] + "Server listening on: http://localhost: " + PORT);
 });
 
 
@@ -19,5 +19,5 @@ function handleRequestTwo(request, response){
 }
 var serverTwo = http.createServer(handleRequest);
 serverTwo.listen(PORT2, function(){
-    console.log(bad[Math.floor(Math.random() * bad.length)] + PORT);
+    console.log(bad[Math.floor(Math.random() * bad.length)] + "Server listening on: http://localhost: " + PORT2);
 });
